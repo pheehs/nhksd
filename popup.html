@@ -3,6 +3,12 @@
   <title>popup.html</title>
 </head>
 <body>
-POPUP.html
+<iframe id="iframe"></iframe>
+<script>
+var url = location.search.substring(1).split("=")[1].replace(/%3D/g, "=");
+console.log(url);
+document.getElementById("iframe").src = url;
+</script>
+
 </body>
 </html>
