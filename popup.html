@@ -3,11 +3,11 @@
   <title>popup.html</title>
 </head>
 <body>
-<iframe id="iframe"></iframe>
+<div id="frame"></iframe>
 <script>
 var url = location.search.substring(1).split("=")[1].replace(/%3D/g, "=");
 console.log(url);
-document.getElementById("iframe").src = url;
+window.location.href = url;
 </script>
 
 </body>

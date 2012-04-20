@@ -1,20 +1,19 @@
 {
 	"name":"NHK語学番組ダウンローダー",
-	"version":"0.0.1",
+	"version":"0.0.2",
 	"description":"NHKの語学番組サイトでストリーミング配信中のものをダウンロード",
 	
 	"background_page":"background.html",
-	"page_action":
+	"content_scripts":[
 	{
-	  "default_icon": "icon.png",
-	  "default_title":"NHK語学番組ダウンローダー",
-	  "popup":"popup.html"
-	},
+	  "matches":["http://www.nhk.or.jp/gogaku/*"],
+	  "js":["content.js"]
+	}
+	],
 	"permissions":
 	[
-	  "tabs",
 	  "webRequest",
-	  "*://www.nhk.or.jp/gogaku/*"
+	  "http://www.nhk.or.jp/gogaku/*"
 	],
 	"update_url":"http://pythxsh.geek.jp/nhksd/updates.xml"
 }
