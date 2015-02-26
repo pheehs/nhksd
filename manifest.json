@@ -15,5 +15,5 @@
 	  "webRequest",
 	  "http://www.nhk.or.jp/gogaku/*"
 	],
-	"update_url":"http://pythxsh.geek.jp/nhksd/updates.xml"
+	
 }
